@@ -9,21 +9,29 @@
     <link rel="stylesheet" href="{{site.baseurl}}/css/typography.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/buttons.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/navigation.css">
 
 
 </head>
 
 <body>
-    <div class="wrapper">
-        This is Site.html template
-        e.g. <b>Menu</b>
-        {{site.baseurl}}
-        <br />
-        <a href="{{site.baseurl}}/">Go to Index</a>
-        <a href="{{site.baseurl}}/test-buttons/">Go to Buttons</a>
-        <a href="{{site.baseurl}}/test-typography/">Go to Typography</a>
-        <a href="{{site.baseurl}}/myAbout/">Go to About</a>
-    </div>
+        <div class="page">
+            <header>
+                <nav class="main">
+                    <ul>
+                        <li><a href="{{site.baseurl}}/">Home</a></li>
+                        <li><a href="{{site.baseurl}}/test-buttons/">Page</a>
+                            <ul>
+                                <li><a href="#">Sub Page</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{{site.baseurl}}/About/">About</a></li>
+                        <li><a href="{{site.baseurl}}/test-buttons/">Test Buttons</a></li>
+                        <li><a href="{{site.baseurl}}/test-typography/">Test Typography</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
     {{content}}
 </body>
 
