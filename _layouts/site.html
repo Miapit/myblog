@@ -10,28 +10,47 @@
     <link rel="stylesheet" href="{{site.baseurl}}/css/buttons.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/navigation.css">
-
-
 </head>
 
 <body>
-        <div class="page">
-            <header>
+    <div class="page">
+        <header class="site-header">
+            <div class="wrapper">
+                <div class="site-branding">
+                    <p class="site-title">
+                        <a href="#">My Blog</a>
+                    </p>
+                    <p class="site-description">
+                        The last blog you will ever need to read :)
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="#" id="searchform">
+                        <label for="search"></label>
+                        <input type="text" name="search" placeholder="Search">
+                        <input type="submit" value="Search" id="searchsubmit">
+                    </form>
+                </div>
+            </div>
+                <a href="">
+                    <img src="https://wp-themes.com/wp-content/themes/twentyeleven/images/headers/pine-cone.jpg" alt="Theme Preview">
+                </a>
                 <nav class="main">
                     <ul>
                         <li><a href="{{site.baseurl}}/">Home</a></li>
-                        <li><a href="{{site.baseurl}}/test-buttons/">Page</a>
+                        <li><a href="{{site.baseurl}}/About/">About</a></li>
+                        <li><a href="#">Page</a>
                             <ul>
                                 <li><a href="#">Sub Page</a></li>
                             </ul>
                         </li>
-                        <li><a href="{{site.baseurl}}/About/">About</a></li>
                         <li><a href="{{site.baseurl}}/test-buttons/">Test Buttons</a></li>
                         <li><a href="{{site.baseurl}}/test-typography/">Test Typography</a></li>
                     </ul>
                 </nav>
-            </header>
-        </div>
+           
+        </header>
+    </div>
     {{content}}
 </body>
 

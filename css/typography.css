@@ -2,6 +2,13 @@ html{
     font: 16px/1.5 Helvetica, sans-serif;
 }
 
+/* .site-title,
+h1, h2, h3, h4, h5, h6 {
+	font: 1em/1.2 'Merriweather', Georgia, serif;
+	margin: 1em 0 0.5em 0;
+	padding: 0;
+} */
+
 h1, h2, h3, h4, h5, h6 {
     font: 1em/1.2 Georgia, serif;
     margin: 1rem 0 0.5em 0;
@@ -17,6 +24,12 @@ h6 { font-size: 1.2rem; }
 
 p {
     margin: 0;
+    padding-bottom: 0rem;
+    /* padding-bottom: 1.5rem; */
+
+}
+
+div.site-branding {
     padding-bottom: 1.5rem;
 }
 
