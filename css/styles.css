@@ -2,10 +2,27 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
 body {
     padding: 5em;
+    background: #E2E2E2;
 }
 
-.page header {
+header .image-wrapper {
+    margin: 0;
+}
+
+.content-wrapper {
+    background: rgba(252, 236, 213, 0.3);
+}
+
+.page {
     max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    background: #FFF;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    text-align: center;
 }
 
 .site-header .site-title a {
@@ -31,26 +48,76 @@ body {
 }
 
 .wrapper #searchform {
-    position: absolute;
-    top: 3.8em;
-    right: 7.6%;
+    position: relative;
+    top: -5em;
+    right: 1rem;
     text-align: right;
 }
 
+.wrapper #searchsubmit{
+    display: none;
+}
+
 .post {
+    margin: 2rem;
     box-sizing: border-box;
     margin-top: 1rem;
-    border: 1px solid black;
+    border-top: 1px solid #ccc;
+    
 }
 
 .post header h1 {
     font-weight: bold;
 }
 
-main {
-    border: 0.5rem solid red;
+.post main {
+    padding: 1rem;
+    background: #ddd;
 }
 
-footer {
+.post footer {
     font-size: 0.8rem;
+}
+
+
+
+footer .wrapper{
+    background: #D1D1D9;
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #AAA;
+}
+
+footer .wrapper a{
+    text-decoration: none;
+    color: #333;
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .secondary-area ul {
+    line-height: 1;
+
+}
+
+main .secondary-area ul li a {
+    text-decoration: none;
+    color: #3593E0;
+    font-size: 0.7rem;
+}
+main .secondary-area ul li a:hover {
+    text-decoration: underline;
+}
+
+main .secondary-area p {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: #444;
+    padding-left: 2.5rem;
 }
