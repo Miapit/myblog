@@ -26,9 +26,13 @@
                 </div>
                 <div class="form">
                     <form action="#" id="searchform">
-                        <label for="search"></label>
-                        <input type="text" name="search" placeholder="Search">
-                        <input type="submit" value="Search" id="searchsubmit">
+                        <p class="field">
+                            <span class="input">
+                                <input type="text" name="username" id="username" />
+                                <span class="actions"></span>
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </p>
                     </form>
                 </div>
             </div>
@@ -37,30 +41,30 @@
                     <img src="https://wp-themes.com/wp-content/themes/twentyeleven/images/headers/pine-cone.jpg" alt="Theme Preview">
                 </a>
             </div>
-                <nav class="main">
-                    <ul>
-                        <li><a href="{{site.baseurl}}/">Home</a></li>
-                        <li><a href="{{site.baseurl}}/About/">About</a></li>
-                        <li><a href="#">Page</a>
-                            <ul>
-                                <li><a href="#">Sub Page</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="{{site.baseurl}}/test-buttons/">Test Buttons</a></li>
-                        <li><a href="{{site.baseurl}}/test-typography/">Test Typography</a></li>
-                    </ul>
-                </nav>
-           
+            <nav class="main">
+                <ul>
+                    <li><a href="{{site.baseurl}}/">Home</a></li>
+                    <li><a href="{{site.baseurl}}/About/">About</a></li>
+                    <li><a href="#">Page</a>
+                        <ul>
+                            <li><a href="#">Sub Page</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{site.baseurl}}/test-buttons/">Test Buttons</a></li>
+                    <li><a href="{{site.baseurl}}/test-typography/">Test Typography</a></li>
+                </ul>
+            </nav>
+
         </header>
-    <div class="content-wrapper">
-    {{content}}
-    </div>
-    <footer>
-        <div class="wrapper">
-            <a href="#">Proudly powered by MyCompany&reg;</a>
+        <div class="content-wrapper">
+            {{content}}
         </div>
-    </footer>
-</div>
+        <footer>
+            <div class="wrapper">
+                <a href="#">Proudly powered by MyCompany&reg;</a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -124,3 +124,57 @@ main .secondary-area p {
     color: #444;
     padding-left: 2.5rem;
 }
+
+
+
+
+
+
+
+
+.field .input {
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+
+/* .field .input:after {
+	display: block;
+	content: '';
+} */
+
+.field .input input {
+	border: none;
+	flex: 1 1 auto;
+	padding: 0.8rem;
+	outline: none;
+	background: transparent;
+	z-index: 2;
+	order: 2;
+}
+
+.field .input .fas {
+	z-index: 2;
+	position: relative;
+	padding: 0 0 0 0.8rem;
+	font-size: 0.9em;
+	order: 1;
+}
+
+.field .input input + .actions {
+	display: block;
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 0.3rem;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 1;
+}
+
+.field .input input:focus + .actions {
+	border-color: #090;
+}
+
+.field .input input:focus + .actions + .fas {
+	color: #090;
+}
