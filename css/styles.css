@@ -47,12 +47,15 @@ header .image-wrapper {
     letter-spacing: 0.05rem;
 }
 
-.wrapper #searchform {
-    position: relative;
-    top: -5em;
-    right: 1rem;
-    text-align: right;
+.site-header .wrapper {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
+
 
 .wrapper #searchsubmit{
     display: none;
